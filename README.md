@@ -1,30 +1,68 @@
-# React + TypeScript + Vite
+# 🚀 IgniteFeed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação React moderna que simula uma rede social/feed de posts, desenvolvida com TypeScript e Vite. Demonstra conceitos fundamentais do React como componentes, estado, props e interatividade.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **📱 Feed de Posts** - Visualização de posts com autor, data e conteúdo
+- **💬 Sistema de Comentários** - Adicionar e deletar comentários com sistema de likes
+- **👤 Perfil Editável** - Modal para editar nome, cargo e avatar
+- **🎨 Design Responsivo** - Interface adaptável para desktop e mobile
+- **⌨️ Acessibilidade** - Suporte a navegação por teclado (ESC para fechar modais)
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React 18** - Biblioteca principal
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool e dev server
+- **CSS Modules** - Estilização encapsulada
+- **Phosphor React** - Ícones
+- **date-fns** - Manipulação de datas
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Como Executar
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+# Instalar dependências
+npm install
+
+# Executar em modo desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview da build
+npm run preview
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/
+│   ├── Header/          # Cabeçalho com logo
+│   ├── Sidebar/          # Perfil do usuário
+│   ├── Post/             # Posts do feed
+│   ├── Comment/          # Comentários
+│   ├── Avatar/           # Avatar reutilizável
+│   ├── Modal/            # Modal base reutilizável
+│   └── EditProfileModal/ # Modal de edição de perfil
+├── assets/               # Recursos estáticos
+└── global.css           # Estilos globais
+```
+
+## 🎯 Pontos Fortes
+
+- **Código Limpo** - Componentes bem organizados e reutilizáveis
+- **TypeScript** - Interfaces bem definidas e tipagem completa
+- **Design System** - Paleta de cores consistente e responsividade
+- **Validação** - Formulários com validação em tempo real
+- **UX/UI** - Interface intuitiva com feedback visual
+- **Performance** - Componentes otimizados e re-renders mínimos
+
+## 🔧 Scripts Disponíveis
+
+- `npm run dev` - Servidor de desenvolvimento
+- `npm run build` - Build para produção
+- `npm run preview` - Preview da build
+- `npm run lint` - Verificação de código
