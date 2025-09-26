@@ -36,7 +36,8 @@
   border-top: 1px solid var(--gray-600);
 }
 
-.sidebar footer a {
+.sidebar footer a,
+.sidebar footer button {
   height: 3.125rem;
   display: block;
   text-decoration: none;
@@ -55,9 +56,11 @@
   background: transparent;
   border: 1px solid var(--green-500);
   transition: background-color 0.1s, color 0.1s;
+  cursor: pointer;
 }
 
-.sidebar footer a:hover {
+.sidebar footer a:hover,
+.sidebar footer button:hover {
   background: var(--green-500);
   color: var(--white);
 }

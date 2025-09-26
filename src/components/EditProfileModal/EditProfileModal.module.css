@@ -1,0 +1,144 @@
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--gray-100);
+}
+
+.closeButton {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.closeButton:hover {
+  color: var(--gray-300);
+  background: var(--gray-700);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.avatarPreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--gray-700);
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-600);
+}
+
+.previewLabel {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--gray-100);
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-600);
+  background: var(--gray-900);
+  color: var(--gray-100);
+  font-size: 1rem;
+  transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--green-500);
+  box-shadow: 0 0 0 2px rgba(0, 135, 95, 0.2);
+}
+
+.inputError {
+  border-color: var(--red-500);
+}
+
+.inputError:focus {
+  border-color: var(--red-500);
+  box-shadow: 0 0 0 2px rgba(247, 90, 104, 0.2);
+}
+
+.errorMessage {
+  font-size: 0.75rem;
+  color: var(--red-500);
+  margin-top: 0.25rem;
+}
+
+.modalFooter {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-600);
+}
+
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-600);
+  background: transparent;
+  color: var(--gray-300);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.cancelButton:hover {
+  background: var(--gray-700);
+  color: var(--gray-100);
+}
+
+.saveButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background: var(--green-500);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.saveButton:hover {
+  background: var(--green-300);
+}
+
+@media (max-width: 768px) {
+  .modalFooter {
+    flex-direction: column;
+  }
+
+  .cancelButton,
+  .saveButton {
+    width: 100%;
+  }
+}
